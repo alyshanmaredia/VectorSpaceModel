@@ -9,7 +9,6 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.simple.Sentence;
 
 import java.io.*;
-import java.lang.*;
 
 public class VSM {
 
@@ -314,7 +313,7 @@ public class VSM {
         for(Map.Entry<Integer, Double> en : sorted.entrySet()) {
             ans = ans + ("doc.Id --->  " + en.getKey() +"\n");
         }
-        GUI_source.count = String.valueOf(sorted.size());
+        GUI.count = String.valueOf(sorted.size());
         return ans;
     }
 
