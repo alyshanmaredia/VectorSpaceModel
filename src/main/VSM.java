@@ -319,7 +319,7 @@ public class VSM {
 
     //main driver function
     public static void main(String[] args) throws FileNotFoundException {
-        control.main(args); //calling the GUI main function
+        Controller.main(args); //calling the GUI main function
     }
 
 }
