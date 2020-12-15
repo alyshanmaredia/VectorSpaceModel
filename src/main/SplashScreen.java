@@ -54,7 +54,7 @@ public class SplashScreen {
         frame.getContentPane().add(lblNewLabel);
 
         JLabel lblNewLabel_1 = new JLabel("");
-        lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Alishan Maredia\\eclipse-workspace\\IR-A2-K173757\\img\\gif.gif"));
+        lblNewLabel_1.setIcon(new ImageIcon("./img/gif.gif"));
         lblNewLabel_1.setBounds(124, 79, 403, 233);
         frame.getContentPane().add(lblNewLabel_1);
 

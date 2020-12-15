@@ -2,16 +2,9 @@ package main;
 
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import javax.swing.JTextArea;
-import javax.swing.JButton;
+import javax.swing.*;
 
-import javax.swing.ImageIcon;
-
-import javax.swing.JScrollPane;
 import java.awt.Color;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
 import java.awt.Font;
 import java.awt.Image;
 import java.io.FileNotFoundException;
@@ -27,6 +20,8 @@ public class GUI {
     public JFrame frame;
     public String query;
     public static String count ;
+    private JPanel panel1;
+
     /**
      * Launch the application.
      */
@@ -161,11 +156,11 @@ public class GUI {
 
 
         JLabel label = new JLabel("");
-        Image img = new ImageIcon(this.getClass().getResource("/a.png")).getImage();
-        Image resizeImg = img.getScaledInstance(120, 120, java.awt.Image.SCALE_SMOOTH);
-        label.setIcon(new ImageIcon(resizeImg));
-        label.setBounds(191, 11, 98, 91);
-        frame.getContentPane().add(label);
+       // Image img = new ImageIcon(this.getClass().getResource("./img/a.png")).getImage();
+        //Image resizeImg = img.getScaledInstance(120, 120, java.awt.Image.SCALE_SMOOTH);
+        //label.setIcon(new ImageIcon(resizeImg));
+        //label.setBounds(191, 11, 98, 91);
+        //frame.getContentPane().add(label);
 
         JLabel lblCount = new JLabel("Length");
         lblCount.setForeground(new Color(154, 205, 50));
@@ -187,7 +182,5 @@ public class GUI {
         btnReset.setFont(new Font("Tahoma", Font.PLAIN, 16));
         btnReset.setBounds(405, 189, 89, 23);
         frame.getContentPane().add(btnReset);
-
-
     }
 }
