@@ -13,7 +13,7 @@ class Controller {
 
     static public void main(String args[]) throws FileNotFoundException {
 
-        splash obj  = new splash();
+        SplashScreen obj  = new SplashScreen();
         obj.frame.setVisible(true);
         GUI gui = new GUI();
         try {
